@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="600.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem fx:id="menuRules" mnemonicParsing="false" onAction="#onActionMenuRules" text="Rules" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <ImageView fx:id="imgP1One" fitHeight="149.0" fitWidth="110.0" layoutX="14.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imgP1Two" fitHeight="149.0" fitWidth="110.0" layoutX="14.0" layoutY="188.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imgP1Three" fitHeight="149.0" fitWidth="110.0" layoutX="14.0" layoutY="337.0" pickOnBounds="true" preserveRatio="true" />
+      <TextArea fx:id="txtResults" layoutX="176.0" layoutY="337.0" prefHeight="138.0" prefWidth="250.0">
+         <font>
+            <Font name="Impact" size="14.0" />
+         </font>
+      </TextArea>
+      <Button fx:id="btnDeal" layoutX="252.0" layoutY="203.0" mnemonicParsing="false" onAction="#onActionDeal" prefHeight="52.0" prefWidth="96.0" text="Deal">
+         <font>
+            <Font name="Lucida Calligraphy Italic" size="24.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="imgP2One" fitHeight="149.0" fitWidth="110.0" layoutX="476.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imgP2Two" fitHeight="149.0" fitWidth="110.0" layoutX="476.0" layoutY="188.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imgP2Three" fitHeight="149.0" fitWidth="110.0" layoutX="476.0" layoutY="337.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="lblP1" layoutX="124.0" layoutY="39.0" text="Player 1">
+         <font>
+            <Font name="Lucida Calligraphy Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblP2" layoutX="413.0" layoutY="39.0" text="Player 2">
+         <font>
+            <Font name="Lucida Calligraphy Italic" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnWon" layoutX="210.0" layoutY="269.0" mnemonicParsing="false" onAction="#onActionWhoWon" prefHeight="53.0" prefWidth="181.0" text="Who Won?">
+         <font>
+            <Font name="Lucida Calligraphy Italic" size="24.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtP1" layoutX="124.0" layoutY="61.0" prefHeight="25.0" prefWidth="110.0" promptText="Enter Name" />
+      <TextField fx:id="txtP2" layoutX="366.0" layoutY="61.0" prefHeight="25.0" prefWidth="110.0" promptText="Enter Name" />
+      <Button fx:id="btnShuffle" layoutX="253.0" layoutY="135.0" mnemonicParsing="false" onAction="#onActionShuffle" prefHeight="53.0" prefWidth="96.0" text="Shuffle">
+         <font>
+            <Font name="Lucida Calligraphy Italic" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
